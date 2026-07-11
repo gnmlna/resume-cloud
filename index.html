@@ -7,57 +7,7 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        html{
-            scroll-behavior:smooth;
-        }
-
-        body{
-            background:#f8f9fa;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        section{
-            padding:70px 0;
-        }
-
-        .hero{
-            background:#0d6efd;
-            color:white;
-            padding:120px 0;
-        }
-
-        .hero h1{
-            font-weight:bold;
-        }
-
-        .section-title{
-            font-weight:bold;
-            margin-bottom:30px;
-        }
-
-        .card{
-            border:none;
-            box-shadow:0 .125rem .5rem rgba(0,0,0,.08);
-        }
-
-        .badge{
-            margin:4px;
-            font-size:.9rem;
-        }
-
-        footer{
-            background:#212529;
-            color:white;
-            padding:20px;
-        }
-
-        .justify-list li {
-            text-align: justify;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -453,13 +403,18 @@ GitHub
 
 </section>
 
-<footer class="text-center">
+<footer class="text-center py-3">
 
-© 2026 Gian Carlo Milana
+    <p class="mb-1">
+        My Visitors Count: <span id="visitor-count">Loading...</span>
+    </p>
+
+    <p class="mb-0">
+        © 2026 Gian Carlo Milana
+    </p>
 
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="visitor-counter.js"></script>
 </body>
 </html>
